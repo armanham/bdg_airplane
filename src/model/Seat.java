@@ -1,4 +1,4 @@
-package plane.model;
+package model;
 
 public class Seat {
 

@@ -1,7 +1,5 @@
-package plane;
-
-import plane.service.AdministrationService;
-import plane.service.PlaneService;
+import service.AdministrationService;
+import service.PlaneService;
 
 public class Test {
 

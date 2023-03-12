@@ -1,8 +1,8 @@
-package plane.service;
+package service;
 
-import plane.model.Plane;
-import plane.model.Seat;
-import plane.model.SeatState;
+import model.Plane;
+import model.Seat;
+import model.SeatState;
 
 public class AdministrationService {
 

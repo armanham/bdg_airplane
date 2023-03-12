@@ -1,6 +1,6 @@
-package plane.service;
+package service;
 
-import plane.model.Plane;
+import model.Plane;
 
 import java.util.ArrayList;
 import java.util.List;
