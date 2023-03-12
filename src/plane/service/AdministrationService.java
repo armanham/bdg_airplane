@@ -16,7 +16,6 @@ public class AdministrationService {
         if (idOfPlane <= 0 || numberOfRow <= 0 || !Character.isLetter(numberInRow) || Character.isLowerCase(numberInRow)) {
             throw new IllegalArgumentException("Passed wrong parameter: ");
         }
-
         Plane plane = planeService.findBy(idOfPlane);
         if (plane == null) {
             System.out.println("Plane in this id does not exists: ");
