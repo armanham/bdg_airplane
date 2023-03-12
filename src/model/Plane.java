@@ -66,6 +66,10 @@ public class Plane {
     }
 
     public void setNumberOfSeatRows(int numberOfSeatRows) {
+        if (numberOfSeatRows <= 0){
+            System.out.println("Passed parameter must be positive number: ");
+            return;
+        }
         this.numberOfSeatRows = numberOfSeatRows;
     }
 
@@ -74,6 +78,10 @@ public class Plane {
     }
 
     public void setNumberOfSeatsInRow(char numberOfSeatsInRow) {
+        if (!Character.isLetter(numberOfSeatsInRow) && Character.isLowerCase(numberOfSeatsInRow)){
+            System.out.println("Passed parameter must be an uppercase letter: ");
+            return;
+        }
         this.numberOfSeatsInRow = numberOfSeatsInRow;
     }
 
@@ -82,6 +90,10 @@ public class Plane {
     }
 
     public void setSeats(List<Seat> seats) {
+        if (seats == null || seats.isEmpty()){
+            System.out.println("Passed null or empty value: ");
+            return;
+        }
         this.seats = seats;
     }
 
